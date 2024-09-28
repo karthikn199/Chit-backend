@@ -31,8 +31,8 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo getApiInfo() {
-		return new ApiInfo("Spring Boot <add project info> REST API",
-				"Spring Boot REST API for <add project info> service", "1.0.0", "Terms of Service",
+		return new ApiInfo("Spring Boot Chit-Fund REST API",
+				"Spring Boot REST API for Chit-Fund service", "1.0.0", "Terms of Service",
 				new Contact(webContactName, webSiteLink, ""), "", "", Collections.emptyList());
 	}
 

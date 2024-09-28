@@ -15,5 +15,6 @@ public class CommonConstant {
 	public static final String ERR_MSG_FORMAT = "Exception occurred in {}: {}";
 	public static final String SERVICE_UNAVAILABLE = "Service Not Available.";
 	public static final String STR_DATE_FORMAT_YYYY_MM_DD_HH_MM_SS = "yyyy-MM-dd'T'HH:mm:ss";
+	public static final String REFRESH_TOKEN = "refreshToken";
 
 }

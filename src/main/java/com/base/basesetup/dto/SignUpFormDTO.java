@@ -9,6 +9,8 @@
  */
 package com.base.basesetup.dto;
 
+import java.time.LocalDate;
+
 //import javax.persistence.EnumType;
 //import javax.persistence.Enumerated;
 import javax.validation.constraints.Email;
@@ -23,32 +25,33 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SignUpFormDTO {
-	@NotBlank(message = "First Name is required")
-	private String firstName;
-
-	private String lastName;
-
-	private String userName;
-
-	@NotBlank(message = "Email is required")
-	@Size(max = 30)
-	@Email
+	
+	private Long id;
+	private String userType;
+	private Long orgId;
+	private String fullName;
+	private String nickName;
+	private String gender;
+	private LocalDate dob;
+	private String mobile;
 	private String email;
-
-	@NotBlank
-	@Size(min = 6, max = 100, message = "Password is required")
 	private String password;
-
-//	@Size(min = 2, max = 13, message = "Please provide Valid Phone Number")
-//	private String phoneNumber;
-//
-//	private String secondaryPhone;
-
-//	@Enumerated(EnumType.STRING)
-//	private Gender gender;
-
-//	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-//	@Past(message = "The date of birth must be in the past.")
-//	private LocalDate dob;
-
+	private String pan;
+	private String aadhar;
+	private String branch;
+	private String address;
+	private String country;
+	private String state;
+	private String city;
+	private String pinCode;
+	private String jobNature;
+	private String selfCompany;
+	private String selfCompanyLocation;
+	private int monthlyIncome;
+	private String employeeCode;
+	private LocalDate doj;
+	private String department;
+	private String designation;
+	private boolean active;
+	private String createdBy;
 }
